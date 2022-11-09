@@ -1,0 +1,363 @@
+/*body
+    line-height: 1; /*espaciado de las lineas del texto y no requiere unidad */
+*{
+    margin: 0;
+    padding: 0;
+    /*outline: 0;*/
+    /*box-sizing: border-box;*/
+    
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-image: url("../img/fondo1.png");
+    font-family: sans-serif;
+}
+img {
+    max-width: 100%;
+    /*min-width: 3%;*/
+    
+}
+iframe{
+    max-width: 100%;
+}
+.cabeceraima
+{
+  background-image: url("../img/Endo3.JPG");
+  padding: 10rem;
+  color: azure;
+  font-size: 2.8rem;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  
+ 
+}
+/*para rodar el footer*/
+.wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    background-color: #333;
+    color: white;
+    height: 200px;
+    margin-top: 2rem;
+
+}
+/*fin de footer*/
+
+.content{
+    flex-grow: 1;
+}
+
+/* inicio barra de navegacion*/
+
+
+
+
+nav{
+    margin-bottom: 1rem;
+}
+
+.menu-header{
+    display: flex;
+    justify-content:space-between;
+    /*height: 75px;
+    width: 100vw;*/
+    align-items: center;
+    /*z-index: 1;*/
+    position: sticky;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding: 3rem;
+    background: #0077b6; 
+    box-shadow: 5px 0 10px #333; 
+}
+
+.lista-navegacion {
+    display: flex;
+    font-size: 1.8rem;
+    gap: 2rem;
+    background: #0077b6;
+    list-style-type: none;
+    
+}
+
+
+.lista-navegacion li a{
+    color:aliceblue;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 7px 13px;
+    
+}
+
+ .lista-navegacion li:hover{ /*se usa para cuando pacemos el cursor por el menu elte cambie de color*/
+   /*margin-bottom: 4rem;*/
+    /*padding-block:3rem;*/
+    background-color: #023e8a ;
+    transition: .4s;
+}
+
+/*.btn_menu{
+    margin-right: 30px;
+    font-size: 25px;
+    color: rgb(238, 228, 228);
+    cursor: pointer;
+    display: none;
+    text-decoration: none;
+    
+}*/
+
+ul.cel{
+    top: 65px;
+}
+
+
+.desple {
+    display: none;
+    /*display: flex table-column ;*/
+    
+    position:absolute; /*hace que el menu o barra principal no varie de tamaño*/
+    min-width: 120px; /*expresa el tamaño minimo de los submenus*/
+    /*overflow: hidden;*/
+    background: #0077b6;
+}
+
+
+
+/*fin barra de navegacion*/
+
+/*inicio de INICIO*/
+
+#inicio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    
+    /*flex-grow: 1; /*rueda el footer*/
+
+}
+.card_inicio{
+   
+    
+    border-radius: 2rem;
+    width: 30rem;
+    height: 30rem;
+    padding: 2rem;
+    font-size: 1.4rem;
+    position: relative;
+    justify-content: center;
+    margin-right: 2rem;
+    text-align: justify;
+    background-color: #5ee3f5;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 2rem;
+    box-shadow: 5px 0 10px #333; 
+}
+.card_inicio h3{
+    margin-bottom: 1rem;
+}
+
+
+/*fin de INICIO*/
+
+/*INICIO PAGE, ESPARATI*/
+#esparti h2{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    
+}
+
+#esparti p{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+
+}
+
+.aplica{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3rem;
+    flex-grow: 1; /*rueda el footer*/
+    
+}
+
+.aplica img{
+   
+   max-width: 100%; 
+   height:100%;
+}
+
+
+/*.aplica p{
+    
+    text-align:justify;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    margin-top: 1rem;  
+
+}*/
+
+.card_sparati h3{
+    /*background-color: #5ee3f5;*/
+    /*width: 20rem ;*/
+    /*padding: 2rem;*/
+    /*font-size: 1.6rem;*/
+    
+}
+
+.card_sparati{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #5ee3f5;
+    border: 0.2rem #5ee3f5;
+    border-radius: 2rem;
+   
+   
+    width: 45rem;
+    height: 45rem;
+    padding: 2rem;
+    position: relative;
+    justify-content: center;
+    margin-right: 2rem;
+    margin-right: 2rem;
+    margin-top: 2rem;
+    box-shadow: 5px 0 10px #333; 
+   
+    
+}
+
+/*FIN PAGE, ESPARATI*/
+
+
+/*Ini UBICACION*/
+
+.Ubicacion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin-top: 3rem;
+    flex-grow: 1; /*rueda el footer*/
+}
+.card_Ubi{
+    display: flex;
+    border-radius: 2rem;
+    border:   0.2rem #5ee3f5;
+    background-color: #5ee3f5;
+    width: 45rem;
+    height: 45rem;
+    padding: 2rem;
+    position: relative;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 2rem; 
+    box-shadow: 5px 0 10px #333; 
+}
+
+
+
+/*fin UBICACION*/
+
+/*INICIO RESPONSE*/
+
+@media screen and (max-width: 952px) {
+   
+    
+    .menu-header{
+        
+        font-size: 80%;
+        align-items: center;
+        flex-direction: column;
+        margin-right: 0;
+    }
+    .lista-navegacion li a{
+        font-size: 16px;
+    }
+    
+}
+@media screen and (max-width: 522px) {
+   
+   
+body{
+    background-image: url("../img/blue-snow.jpg");
+    }
+
+    .cabeceraima{
+        background-image: url("../img/endo4.JPG");
+        padding: 15%;
+        text-align: left;
+        font-size: 2.8rem;
+        font-family: 'Inter', sans-serif;
+        
+    }
+    
+    .menu-header{
+        height: 20%; 
+        align-items: center;
+        padding: 0;
+         
+    }
+
+    /*.menu-header .btn_menu{
+        display: block;
+        font-size: 25px;
+        box-sizing: border-box;
+    }*/
+    
+    .menu-header ul li {
+        display:flex;
+        flex-direction: column;
+        
+    }
+
+    .lista-navegacion{
+        position:relative;
+        flex-direction: column;
+        width: 100vw ;
+        height: calc(100% - 65px);
+        background: #414141;
+        /*left: -100vh;   /*para ocultar*/
+       /* text-align: center;
+        transition: all .4s;
+        
+    }
+    .lista-navegacion li{
+        margin: 30px 0 0 0;
+        line-height: 30px;
+    }
+    .lista-navegacion li:hover {
+        background: none;
+    }
+    .lista-navegacion li a{
+        font-size: 20px;
+        color:azure;
+        font-weight: bold;
+    }*/
+}
+    
+}
+
+@media screen and (max-width: 522px) and (orientation: landscape){
+    
+    .lista-navegacion{
+        overflow: scroll;
+        height: calc(100% - 65px);
+    }
+    .lista-navegacion li a{
+        margin: 5rem 0 0 0;
+    }}
+    
+/*FIN RESPONSE*/

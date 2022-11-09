@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Contactos</title>
+</head>
+<body>
+    <div class="cabeceraima">
+        <img src="../img/esparati/inicio.JPG" alt="cabecera" >
+       </div>
+        <!--nav = etiqueta semantica para menu nav-->
+        <nav id="menu-header">
+             <!--colocamos id para hacer el llamado correcto o preciso de lo que queremos modificar desde el css-->
+            <ul class="lista-navegacion">
+                <li>
+                    <a href="../index.html">INICIO</a>
+
+                    <ul class="desple">
+                        <li><a href="que-es">¿Que es la endocrinologia?</a></li>
+                        <li><a href="que-hace">¿Que hace un endocrino?</a></li>
+                        <li><a href="patologia">Patologias hormonales</a></li>
+                        <li><a href="diag">¿Como se diagnostica?</a></li>
+                        
+                    </ul>
+                </li>
+
+                <li >
+                    <a href="esparati.html">¿ES PARA TI?</a>
+                    
+                </li>
+
+                <li >
+                    <a href="ubicacion.html">UBICACION</a>
+                </li>
+
+               
+
+                <li >
+                    <a href="masinfo.html">+INFO</a>
+                </li>
+
+                <li >
+                    <a href="contacto.html">CONTACTO</a>
+                </li>
+            </ul>
+            
+        </nav>
+      </header> 
+
+    <section>
+        <ul></ul>
+        <form>
+             <fieldset><!--esta etiqueta dealiza un borde al rededor de lo que contiene-->
+                <legend> Deja tus datos</legend><!--seria el titulo que lleva la etiqueta fieldset-->
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" placeholder="Coloque su Nombre Aqui">
+                </div>
+
+                <div>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" placeholder="Coloque su Apellido Aqui">
+                </div>
+
+                <div>
+                    <label for="celular">Numero Tlf. o Celular</label>
+                    <input type="text" id="celular" maxlength="12" placeholder="011 1234 6789">
+                </div>
+
+          
+
+          <div>
+            <label for = "email">Correo Electronico</label>
+            <input type = "email" id = "email" required placeholder="escriba su correo o mail">
+          </div>
+
+          <div>
+               <p>Sexo:</p>
+
+               <label for = "opcion1">Hombre</label>
+               <input type = "radio" name = "sexo" id = "opcion1">
+
+               <label for = "opcion2">Mujer</label>
+               <input type = "radio" name = "sexo" id = "opcion2">
+
+               <label for = "opcion3">No Binario</label>
+               <input type = "radio" name = "sexo" id = "opcion3">
+          </div>
+          
+
+         
+
+          <div>
+            <label for = "mensaje">Dejanos tu mensaje</label>
+            <textarea id = "mensaje" cols = "30" rows = "10" maxlength = "500" placeholder="Escriba aqui su comentario"></textarea>
+          </div>
+
+          <!--input de opciones unicas-->
+
+          
+             </fieldset>
+
+         <!--input varias opciones-->
+
+       
+          <div>
+            <input type = "submit" value ="enviar">
+            <input type = "reset" value ="limpiar">
+            <input type = "button" value ="no hace nada">
+          </div>
+
+          
+        </form>
+
+    </section>
+
+    <footer>
+        <p>Sitio desarrollado en el curso de desarrollo web</p>
+    </footer>
+    
+    
+
+
+    
+    
+</body>
+</html>
